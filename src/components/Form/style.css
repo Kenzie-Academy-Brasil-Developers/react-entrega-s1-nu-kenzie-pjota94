@@ -1,0 +1,199 @@
+.form {
+  width: 22.687rem;
+  height: 21.937rem;
+  border-radius: 4px;
+  border: 1px solid rgba(233, 236, 239, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.label-descricao {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 2.375rem;
+  margin-bottom: 0.75rem;
+  color: rgb(33, 37, 41);
+  margin-right: 256px;
+}
+
+.input-descricao {
+  width: 19.625rem;
+  height: 3.3rem;
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 8px;
+  border: none;
+  padding-left: 1rem;
+}
+
+.input-descricao::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(134, 142, 150);
+  line-height: 26px;
+}
+
+.span-input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: rgb(134, 142, 150);
+  margin-top: 0.275rem;
+  margin-bottom: 1.106rem;
+  margin-right: 189px;
+}
+
+.container-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.187rem;
+}
+
+.box1-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-valor {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(33, 37, 41);
+  font-size: 0.75rem;
+  margin-bottom: 0.562rem;
+}
+
+.input-valor {
+  width: 8rem;
+  height: 3rem;
+  background-color: rgba(248, 249, 250, 1);
+  border: none;
+  border-radius: 8px;
+  padding-left: 1rem;
+  margin-right: 2.25rem;
+}
+
+.input-valor::placeholder {
+  padding-left: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(33, 37, 41);
+}
+
+.box2-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-tipo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(33, 37, 41);
+  font-size: 0.75rem;
+  margin-bottom: 0.562rem;
+}
+
+.select-tipo {
+  width: 9.375rem;
+  height: 3rem;
+  background-color: rgba(248, 249, 250, 1);
+  border: none;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: rgb(33, 37, 41);
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.btn-form {
+  width: 19.625rem;
+  height: 3rem;
+  background-color: rgba(253, 55, 126, 1);
+  border-radius: 8px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  filter: brightness(0.8);
+}
+
+@media screen and (max-width: 866px) {
+  .form {
+    width: 14.687rem;
+  }
+
+  .label-descricao {
+    margin-right: 149px;
+  }
+
+  .input-descricao {
+    width: 12.625rem;
+  }
+
+  .span-input {
+    margin-right: 79px;
+  }
+
+  .input-valor {
+    width: 4rem;
+  }
+
+  .select-tipo {
+    width: 6.375rem;
+  }
+
+  .btn-form {
+    width: 12.625rem;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .form {
+    width: 19.687rem;
+  }
+
+  .label-descricao {
+    margin-right: 208px;
+  }
+
+  .input-descricao {
+    width: 16.625rem;
+  }
+
+  .span-input {
+    margin-right: 140px;
+  }
+
+  .input-valor {
+    width: 6rem;
+  }
+
+  .select-tipo {
+    width: 8.375rem;
+  }
+
+  .btn-form {
+    width: 16.625rem;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .form {
+    width: 17.687rem;
+  }
+}

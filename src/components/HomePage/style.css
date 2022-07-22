@@ -1,0 +1,38 @@
+.container-geral {
+  display: flex;
+  justify-content: center;
+}
+
+.container-left {
+  margin-right: 3.687rem;
+}
+
+.div-transition {
+  animation: go-back 0.8s;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container-left {
+    margin-right: 1.687rem;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .container-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-left {
+    margin-right: 0px;
+  }
+}

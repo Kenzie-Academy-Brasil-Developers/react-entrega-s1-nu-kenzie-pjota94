@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@400;600;700;800&display=swap");
+
+.div-main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(33, 37, 41);
+  display: flex;
+  justify-content: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  height: inherit;
+  width: 61.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 7.667rem;
+  margin-bottom: 1.904rem;
+}
+
+.text-main {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.375rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1.75rem;
+  width: 21.687rem;
+}
+
+.span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1.75rem;
+}
+
+.btn-iniciar {
+  width: 15.062rem;
+  height: 3rem;
+  background-color: rgba(253, 55, 126, 1);
+  border-radius: 8px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.div-imagem {
+}
+
+.btn-iniciar:hover {
+  filter: brightness(0.8);
+}
+
+@media screen and (max-width: 991px) {
+  .imagemPrincipal {
+    width: 458px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .imagemPrincipal {
+    width: 365px;
+  }
+
+  .text-main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 31px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.75rem;
+    width: 18.687rem;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  .imagemPrincipal {
+    width: 275px;
+  }
+
+  .text-main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.75rem;
+    width: 15.687rem;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .imagemPrincipal {
+    width: 219px;
+  }
+  .btn-iniciar {
+    width: 12.062rem;
+    height: 3rem;
+    background-color: rgba(253, 55, 126, 1);
+    border-radius: 8px;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+  .text-main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.75rem;
+    width: 10.687rem;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  .imagemPrincipal {
+    width: 172px;
+  }
+
+  .text-main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.75rem;
+    width: 10.687rem;
+  }
+  .span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .imagemPrincipal {
+    width: 121px;
+  }
+
+  .text-main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.75rem;
+    width: 10.687rem;
+  }
+  .span {
+    font-size: 14px;
+  }
+
+  .btn-iniciar {
+    width: 9.062rem;
+  }
+
+  .text-main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.75rem;
+    width: 8.687rem;
+  }
+}

@@ -1,0 +1,146 @@
+.container-buttons {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.texto-resumo {
+  color: rgba(33, 37, 41, 1);
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.buttons-filtros {
+}
+
+.button-todos {
+  background-color: rgba(233, 236, 239, 1);
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: rgba(33, 37, 41, 1);
+  padding: 0.656rem 0.937rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.button-entradas {
+  background-color: rgba(233, 236, 239, 1);
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: rgba(33, 37, 41, 1);
+  padding: 0.656rem 0.937rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.button-despesas {
+  background-color: rgba(233, 236, 239, 1);
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: rgba(33, 37, 41, 1);
+  padding: 0.656rem 0.937rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.button-todos:hover {
+  background-color: rgba(253, 55, 126, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.button-entradas:hover {
+  background-color: rgba(253, 55, 126, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.button-despesas:hover {
+  background-color: rgba(253, 55, 126, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.ul-cards {
+  overflow: scroll;
+  height: 30.187rem;
+}
+
+.ul-cards::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.ul-cards::-webkit-scrollbar-thumb {
+  background: rgba(253, 55, 126, 1);
+  border-radius: 5px;
+}
+
+.text-noCard {
+  margin-bottom: 1.687rem;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: rgba(52, 58, 64, 1);
+}
+
+.img-noCard {
+}
+
+@media screen and (max-width: 1030px) {
+  .text-noCard {
+    font-size: 18px;
+  }
+
+  .img-noCard {
+    width: 28rem;
+  }
+
+  .container-buttons {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .container-buttons {
+    flex-direction: column;
+    width: 19rem;
+  }
+
+  .img-noCard {
+    width: 20rem;
+  }
+
+  .text-noCard {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .container-buttons {
+    flex-direction: column;
+    width: 19rem;
+  }
+
+  .img-noCard {
+    width: 18rem;
+  }
+
+  .text-noCard {
+    font-size: 14px;
+  }
+}

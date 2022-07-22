@@ -1,0 +1,115 @@
+.li-card {
+  width: 34.375rem;
+  height: 5.437rem;
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 4px;
+  border-left: solid 4px rgba(3, 184, 152, 1);
+  margin-bottom: 2rem;
+  animation: go-back 0.8s;
+}
+
+.li-card-saida {
+  width: 34.375rem;
+  height: 5.437rem;
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 4px;
+  border-left: solid 4px rgb(233, 236, 239);
+  margin-bottom: 2rem;
+  animation: go-back 0.8s;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.div-li-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 1.125rem;
+  margin-bottom: 1.062rem;
+}
+
+.mes-salario {
+  color: rgba(33, 37, 41, 1);
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.valor-salario {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: rgba(33, 37, 41, 1);
+}
+
+.li-trash {
+  width: 1.375rem;
+  height: 1.375rem;
+  background-color: rgba(233, 236, 239, 1);
+  border-radius: 2.46154px;
+  border: none;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  padding: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(52, 58, 64, 1);
+  margin-right: 0.812rem;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.li-trash:hover {
+  background-color: rgba(52, 58, 64, 1);
+  color: white;
+}
+
+.p-li-tipoValor {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: rgba(33, 37, 41, 1);
+  padding-left: 1.125rem;
+}
+
+@media screen and (max-width: 1030px) {
+  .li-card {
+    width: 28rem;
+  }
+
+  .li-card-saida {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .li-card {
+    width: 20rem;
+  }
+
+  .li-card-saida {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .li-card {
+    width: 18rem;
+  }
+
+  .li-card-saida {
+    width: 18rem;
+  }
+}
