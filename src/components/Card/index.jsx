@@ -2,20 +2,32 @@ import "./style.css";
 import { FaTrash } from "react-icons/fa";
 
 export const Card = ({
-  listTransactions,
   setListTransactions,
   setlistFilterEntradas,
   setlistFilterSaidas,
   setlistFilterTodos,
+  listTransactions,
+  listFilterEntradas,
+  listFilterSaidas,
+  listFilterTodos,
 }) => {
-  const haddleDelete = (itemRemovido) => {
-    const deletar = listTransactions.filter((elem) => {
-      return elem.description !== itemRemovido;
+  const haddleDelete = (event) => {
+    const deletarGeral = listTransactions.filter((elem) => {
+      return elem.description !== event.currentTarget.id;
     });
-    setListTransactions(deletar);
-    setlistFilterTodos(deletar);
-    setlistFilterEntradas(deletar);
-    setlistFilterSaidas(deletar);
+    const deletarTodos = listFilterTodos.filter((elem) => {
+      return elem.description !== event.currentTarget.id;
+    });
+    const deletarEntradas = listFilterEntradas.filter((elem) => {
+      return elem.description !== event.currentTarget.id;
+    });
+    const deletarSaidas = listFilterSaidas.filter((elem) => {
+      return elem.description !== event.currentTarget.id;
+    });
+    setListTransactions(deletarGeral);
+    setlistFilterTodos(deletarTodos);
+    setlistFilterSaidas(deletarSaidas);
+    setlistFilterEntradas(deletarEntradas);
   };
 
   return (
@@ -27,8 +39,9 @@ export const Card = ({
               <p className="mes-salario">{card.description}</p>
               <p className="valor-salario">R$ {card.value},00</p>
               <button
+                id={card.description}
                 className="li-trash"
-                onClick={() => haddleDelete(card.description)}
+                onClick={haddleDelete}
               >
                 <FaTrash></FaTrash>
               </button>
@@ -41,8 +54,9 @@ export const Card = ({
               <p className="mes-salario">{card.description}</p>
               <p className="valor-salario">R$ {card.value},00</p>
               <button
+                id={card.description}
                 className="li-trash"
-                onClick={() => haddleDelete(card.description)}
+                onClick={haddleDelete}
               >
                 <FaTrash></FaTrash>
               </button>

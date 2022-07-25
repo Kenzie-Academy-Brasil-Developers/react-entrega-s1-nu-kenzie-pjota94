@@ -51,6 +51,9 @@ export const ListCards = ({
         {listTransactions.length !== 0 ? (
           <Card
             listTransactions={listTransactions}
+            listFilterTodos={listFilterTodos}
+            listFilterEntradas={listFilterEntradas}
+            listFilterSaidas={listFilterSaidas}
             setListTransactions={setListTransactions}
             setlistFilterEntradas={setlistFilterEntradas}
             setlistFilterSaidas={setlistFilterSaidas}
