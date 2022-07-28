@@ -1,7 +1,7 @@
 import "./style.css";
 
-export const TotalMoney = ({ listTransactions }) => {
-  const total = listTransactions.reduce((acc, valueAtual) => {
+export const TotalMoney = ({ listFilterTodos }) => {
+  const total = listFilterTodos.reduce((acc, valueAtual) => {
     return (acc += Number(valueAtual.value));
   }, 0);
 

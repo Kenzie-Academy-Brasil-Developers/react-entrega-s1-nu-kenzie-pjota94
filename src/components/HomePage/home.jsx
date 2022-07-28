@@ -28,7 +28,10 @@ export const Home = ({
             setlistFilterSaidas={setlistFilterSaidas}
             setlistFilterTodos={setlistFilterTodos}
           ></Form>
-          <TotalMoney listTransactions={listTransactions}></TotalMoney>
+          <TotalMoney
+            listTransactions={listTransactions}
+            listFilterTodos={listFilterTodos}
+          ></TotalMoney>
         </div>
         <div className="container-rigth">
           <ListCards
