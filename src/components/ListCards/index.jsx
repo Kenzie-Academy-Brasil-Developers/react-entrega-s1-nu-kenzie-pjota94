@@ -12,6 +12,8 @@ export const ListCards = ({
   setlistFilterEntradas,
   setlistFilterSaidas,
   setlistFilterTodos,
+  setItem,
+  item,
 }) => {
   const filtrarEntradas = () => {
     const filtro = listFilterEntradas.filter((elem) => {
@@ -58,6 +60,8 @@ export const ListCards = ({
             setlistFilterEntradas={setlistFilterEntradas}
             setlistFilterSaidas={setlistFilterSaidas}
             setlistFilterTodos={setlistFilterTodos}
+            setItem={setItem}
+            item={item}
           ></Card>
         ) : (
           <>

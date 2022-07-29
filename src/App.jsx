@@ -10,6 +10,7 @@ function App() {
   const [listFilterEntradas, setlistFilterEntradas] = useState([]);
   const [listFilterSaidas, setlistFilterSaidas] = useState([]);
   const [listFilterTodos, setlistFilterTodos] = useState([]);
+  const [item, setItem] = useState(1);
 
   return (
     <div className="App">
@@ -24,6 +25,8 @@ function App() {
           setlistFilterSaidas={setlistFilterSaidas}
           listFilterTodos={listFilterTodos}
           setlistFilterTodos={setlistFilterTodos}
+          setItem={setItem}
+          item={item}
         ></Home>
       ) : (
         <Index setIsLoggedIn={setIsLoggedIn}></Index>

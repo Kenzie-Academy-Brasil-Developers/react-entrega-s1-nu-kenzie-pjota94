@@ -1,19 +1,28 @@
 import "./style.css";
 
 export const Form = ({
-  listTransactions,
   setListTransactions,
   setlistFilterEntradas,
   setlistFilterSaidas,
   setlistFilterTodos,
+  setItem,
+  item,
 }) => {
+  const atualizarItem = () => {
+    const atual = item;
+    setItem(atual + 1);
+
+    return atual;
+  };
+
   const valoresInput = (event) => {
     event.preventDefault();
     const objPrincipal = {};
     const valores = [...event.target];
-    valores.forEach((elem, index) => {
+    valores.forEach((elem) => {
       if (elem.name !== "") {
         objPrincipal[elem.name] = elem.value;
+        objPrincipal.id = item + 1;
       }
     });
 
@@ -66,7 +75,11 @@ export const Form = ({
           </select>
         </div>
       </div>
-      <button type="submit" className="btn-form">
+      <button
+        type="submit"
+        className="btn-form"
+        onClick={() => atualizarItem()}
+      >
         Inserir Valor
       </button>
     </form>

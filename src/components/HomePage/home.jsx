@@ -15,6 +15,8 @@ export const Home = ({
   setlistFilterSaidas,
   listFilterTodos,
   setlistFilterTodos,
+  setItem,
+  item,
 }) => {
   return (
     <div className="div-transition">
@@ -27,6 +29,8 @@ export const Home = ({
             setlistFilterEntradas={setlistFilterEntradas}
             setlistFilterSaidas={setlistFilterSaidas}
             setlistFilterTodos={setlistFilterTodos}
+            setItem={setItem}
+            item={item}
           ></Form>
           <TotalMoney
             listTransactions={listTransactions}
@@ -43,6 +47,8 @@ export const Home = ({
             setlistFilterSaidas={setlistFilterSaidas}
             listFilterTodos={listFilterTodos}
             setlistFilterTodos={setlistFilterTodos}
+            setItem={setItem}
+            item={item}
           ></ListCards>
         </div>
       </div>

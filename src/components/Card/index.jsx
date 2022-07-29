@@ -11,18 +11,18 @@ export const Card = ({
   listFilterSaidas,
   listFilterTodos,
 }) => {
-  const haddleDelete = (event) => {
+  const haddleDelete = (clicado) => {
     const deletarGeral = listTransactions.filter((elem) => {
-      return elem.description !== event.currentTarget.id;
+      return clicado !== elem.id;
     });
     const deletarTodos = listFilterTodos.filter((elem) => {
-      return elem.description !== event.currentTarget.id;
+      return clicado !== elem.id;
     });
     const deletarEntradas = listFilterEntradas.filter((elem) => {
-      return elem.description !== event.currentTarget.id;
+      return clicado !== elem.id;
     });
     const deletarSaidas = listFilterSaidas.filter((elem) => {
-      return elem.description !== event.currentTarget.id;
+      return clicado !== elem.id;
     });
     setListTransactions(deletarGeral);
     setlistFilterTodos(deletarTodos);
@@ -34,14 +34,14 @@ export const Card = ({
     <>
       {listTransactions.map((card, index) =>
         card.type === "Entrada" ? (
-          <li key={index} className="li-card">
+          <li key={index} className="li-card" id={index}>
             <div className="div-li-text">
               <p className="mes-salario">{card.description}</p>
               <p className="valor-salario">R$ {card.value},00</p>
               <button
-                id={card.description}
+                id={card.id}
                 className="li-trash"
-                onClick={haddleDelete}
+                onClick={() => haddleDelete(card.id)}
               >
                 <FaTrash></FaTrash>
               </button>
@@ -54,9 +54,9 @@ export const Card = ({
               <p className="mes-salario">{card.description}</p>
               <p className="valor-salario">R$ {card.value},00</p>
               <button
-                id={card.description}
+                id={card.id}
                 className="li-trash"
-                onClick={haddleDelete}
+                onClick={() => haddleDelete(card.id)}
               >
                 <FaTrash></FaTrash>
               </button>
